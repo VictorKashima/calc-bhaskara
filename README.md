@@ -10,3 +10,10 @@
 <pre>
   Execute o arquivo e coloque os valores de A, B e C.
   O programa irá te dar o valor de Delta, x1 e x2.
+</pre>
+
+<br>
+
+<p align="center">
+  Utilize com moderação
+  </p>
