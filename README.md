@@ -10,6 +10,8 @@
 <pre>
   Execute o arquivo e coloque os valores de A, B e C.
   O programa irá te dar o valor de Delta, x1 e x2.
+  
+  obs* Precisa ter python instalado em seu computador.
 </pre>
 
 <br>
