@@ -3,23 +3,30 @@ import PySimpleGUI as pg
 #TEMA
 pg.theme('DarkPurple4')
 
+#MENU
+menu_layout = [
+    ['Ajuda', ['Como funciona', 'O que é Bhaskara', 'Como usar']],
+    ['Doação', ['PIX', 'PayPal', 'Boleto', 'Endereço', 'Caixa Postal', 'Conta Bancária']]
+]
+
 #LAYOUT
 layout = [
+        [pg.Menu(menu_layout)],
         [
             pg.Text('Valor de "a"', font='Arial 15'), 
-            pg.Input(key='valora')
+            pg.Input(key='a')
         ],
         [
             pg.Text('Valor de "b"', font='Arial 15'), 
-            pg.Input(key='valorb')
+            pg.Input(key='b')
         ],
         [
             pg.Text('Valor de "c"', font='Arial 15'), 
-            pg.Input(key='valorc')
+            pg.Input(key='c')
         ],
         [
             pg.Text('Resultado:', font='Arial 15'), 
-            pg.Radio('Delta', 'grupo 1', key='delta'),
+            pg.Radio('Delta', 'grupo 1', key='d'),
             pg.Radio('"x1" e "x2"', 'grupo 1', key='x1x2'), 
             pg.Radio('Tudo', 'grupo 1', key='all')
         ],
@@ -29,24 +36,29 @@ layout = [
     ]
 
 #JANELA
-janela = pg.Window('Calculadora Bhaskara', layout)
+WIN_W = 30
+WIN_H = 50
 
-#LOOP DE EVENTOS
-while True:
-    evento, valor = janela.read()
-    if evento == "Cancelar" or evento == pg.WIN_CLOSED:
-        break
-    elif evento == "Calcular":
-        print(f"Valor A: {valor['valora']}")
-        print(f"Valor B: {valor['valorb']}")
-        print(f"Valor C: {valor['valorc']}")
-        if valor['delta'] == True:
-            print(f"Delta")
-        if valor['x1x2'] == True:
-            print(f"x1x2")
-        if valor['all'] == True:
-            print(f"all")
+class App():
+    def _init_(self):
+        self.window = pg.Window('Calculadora Bhaskara', layout=layout, margins=(0, 0), resizable=True)
+        self.result = 0
+        self.window.read(timeout=3)
+    for i in range(1, 3):
+        for button in layout[i]:
+            button.expand(expand_x=True, expand_y=True)
+    
+    #FUNÇÕES MENU
+    def comofunciona(self):
+        pg.popup('Como Funciona', 'Você insere os valores respectivos a cada letra e o programa realiza o cálculo e entrega os valores de delta, x1 e x2.')
 
-#FECHAR A JANELA
-janela.close()
-exit()
+    #INICIAR O PROGRAMA
+    def start(self):
+        while True:
+            evento, self.values = self.window.read()
+
+            if evento in (None, 'Cancelar', pg.WIN_CLOSED):
+                break
+
+            if event in ('comofunciona'):
+                self.comofunciona()
