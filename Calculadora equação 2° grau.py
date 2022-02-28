@@ -14,7 +14,7 @@ class color:
    END = '\033[0m'
 
 print('-'*50)
-print('{}CALCULADORA EQUAÇÃO 2° GRAU{}' .format(color.BOLD, color.END) )
+print('{}CALCULADORA BHASKARA{}' .format(color.BOLD, color.END) )
 print('-'*50)
 
 print('obs* o valor de A é aquele que acompanha o x²')
