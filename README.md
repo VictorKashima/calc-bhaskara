@@ -16,6 +16,10 @@
 
 <br>
 
+<div>
+  <img align="center" src = "https://media.giphy.com/media/EmdpZtNJ1hYOCvB7Rc/giphy.gif">
+</div>
+
 <p align="center">
   Utilize com moderação
   </p>
