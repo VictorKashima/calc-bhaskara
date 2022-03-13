@@ -16,8 +16,8 @@
 
 <br>
 
-<div>
-  <img align="center" src = "https://media.giphy.com/media/EmdpZtNJ1hYOCvB7Rc/giphy.gif">
+<div align="center">
+  <img src = "https://media.giphy.com/media/EmdpZtNJ1hYOCvB7Rc/giphy.gif" width="1000" height="1000">
 </div>
 
 <p align="center">
