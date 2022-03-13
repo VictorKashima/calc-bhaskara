@@ -16,9 +16,7 @@
 
 <br>
 
-<div align="center">
-  <img src = "https://media.giphy.com/media/EmdpZtNJ1hYOCvB7Rc/giphy.gif" width="1000" height="1000">
-</div>
+https://user-images.githubusercontent.com/100085891/158083243-5f345f42-1327-478e-974d-09eae64f6763.mp4
 
 <p align="center">
   Utilize com moderação
