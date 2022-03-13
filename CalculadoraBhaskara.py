@@ -42,6 +42,7 @@ x1 = ((-b)+r)/(2*a)
 x2 = ((-b)-r)/(2*a)
 
 #FUNCIONA DESGRAÇA
+#PARECE QUE FUNCIONOU
 
 print('Aqui estão os resultados:')
 print('-'*50)
