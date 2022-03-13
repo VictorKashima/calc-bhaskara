@@ -41,9 +41,6 @@ x1 = ((-b)+r)/(2*a)
 #Segunda solução
 x2 = ((-b)-r)/(2*a)
 
-#FUNCIONA DESGRAÇA
-#PARECE QUE FUNCIONOU
-
 print('Aqui estão os resultados:')
 print('-'*50)
 print('Valor de Delta Δ: {}{}{}' .format(color.BOLD, d, color.END))
