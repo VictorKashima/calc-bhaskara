@@ -1,5 +1,4 @@
 #Calculadora de equação do 2° grau
-import math
 
 class color:
    PURPLE = '\033[95m'
@@ -36,7 +35,7 @@ print('- '*25)
 #Equação de delta
 d = ((b**2)-4*a*c)
 #Raíz quadrada de delta
-r = math.sqrt(d)
+r = (d**(1/2))
 #Primeira solução
 x1 = ((-b)+r)/(2*a)
 #Segunda solução
